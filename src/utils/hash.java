@@ -1,7 +1,5 @@
 package utils;
 
-import static utils.GeneradorClave.keygenKeyGeneration;
-
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.util.Arrays;
@@ -41,6 +39,4 @@ public class hash {
             return false;
         }
     }
-}
-
 }
