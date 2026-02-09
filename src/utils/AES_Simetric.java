@@ -11,6 +11,7 @@ public class AES_Simetric {
             0x04, 0x05, 0x06, 0x07,
             0x08, 0x09, 0x0A, 0x0B,
             0x0C, 0x0D, 0x0E, 0x0F};
+
     public static byte[] encryptData(SecretKey sKey, byte[] data) {
         byte[] encryptedData = null;
         try {
@@ -23,6 +24,7 @@ public class AES_Simetric {
         }
         return encryptedData;
     }
+
     public static byte[] decryptData(SecretKey sKey, byte[] dataEncrypted) {
         byte[] Data = null;
         try {
@@ -35,6 +37,7 @@ public class AES_Simetric {
         }
         return Data;
     }
+
     public static SecretKey keygenKeyGeneration(int keySize) {
         SecretKey sKey = null;
         if ((keySize == 128) || (keySize == 192) || (keySize == 256)) {

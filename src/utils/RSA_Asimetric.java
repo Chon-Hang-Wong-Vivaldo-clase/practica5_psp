@@ -19,6 +19,7 @@ public class RSA_Asimetric {
         }
         return keys;
     }
+
     public static byte[] encryptData(byte[] data, PublicKey pub) {
         byte[] encryptedData = null;
         try {
@@ -30,6 +31,7 @@ public class RSA_Asimetric {
         }
         return encryptedData;
     }
+
     public static byte[] decryptData(byte[] dataEncrypted, PrivateKey priv) {
         byte[] Data = null;
         try {
